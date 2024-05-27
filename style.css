@@ -3,8 +3,9 @@
 
 body{
     width: 100%;
-    margin: 5px;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
 }
 
 ::-webkit-scrollbar{
@@ -16,6 +17,12 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+a{
+    align-self: center;
+    justify-self: center;
 }
 
 h1{
@@ -24,12 +31,16 @@ h1{
     font-size: 52px;
     padding: 2px;
     margin: 0 2px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .boton{
     background-color: #ececec;
     display: grid;
-    height: 110vh;
+    align-items: center;
+    height: 120vh;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(5, 200px);
 }
@@ -46,19 +57,9 @@ b{
     font-size: 36px;
 }
 
-.parent{
-    scroll-snap-type: y proximity;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-}
-
 img{
     width: 80%;
     margin: 0 0 2em 0;
-}
-
-img{
     filter: drop-shadow(black 0 1rem 10px);
 }
 
@@ -70,6 +71,10 @@ img{
     height: inherit;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 h6{
@@ -87,9 +92,23 @@ h6{
     font-style: italic;
 }
 
+.fourth h2{
+    text-align: center;
+}
+
 p{
     font-family: "Open Sans", sans-serif;
     width: 80%;
     margin: 1em 2em 4em;
     text-align: justify
+}
+
+.section{
+    background-color: #ececec;
+    padding-block: 20px;
+    padding-inline: 10px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    grid-gap: 150px;
 }
