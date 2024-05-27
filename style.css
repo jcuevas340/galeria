@@ -107,7 +107,7 @@ p{
     background-color: #ececec;
     padding-block: 20px;
     padding-inline: 10px;
-    margin: 0;
+    margin: 3em 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, 100%);
     grid-gap: 150px;
